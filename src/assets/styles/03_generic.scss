@@ -1,4 +1,15 @@
-/* RESET */
+/**
+ *! BASE CONTENTS FOR ITCSS
+ *
+ ** GENERIC - 03_generic
+ *? Reset and/or normalize styles, box-sizing definition, etc. This is the first layer which generates actual CSS.
+ * Normalize.css........A level playing field.
+ * Box-sizing...........Better default `box-sizing`.
+ */
+
+/* ------------------------------------ *\
+  RESET
+\* ------------------------------------ */
 *,
 *:before,
 *:after {
@@ -105,4 +116,6 @@ input {
   -webkit-appearance: none;
   border-radius: 0;
 }
-/* RESET */
+/* ------------------------------------ *\
+  RESET - END
+\* ------------------------------------ */

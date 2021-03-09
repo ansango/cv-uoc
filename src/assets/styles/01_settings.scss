@@ -1,0 +1,30 @@
+/**
+ *! BASE CONTENTS FOR ITCSS
+ *
+ ** SETTINGS - 01_settings"
+ *? Used with preprocessors and contain font, colors definitions, etc.
+ * Global...............Globally-available variables and config.
+ */
+
+/* ------------------------------------ *\
+  #HELPERS
+\* ------------------------------------ */
+
+@use "sass:color";
+
+/* ------------------------------------ *\
+  #FONTS
+\* ------------------------------------ */
+
+$font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+  "Helvetica Neue", arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+  "Segoe UI Symbol";
+$font-family-serif: "Georgia", "Times New Roman", serif;
+
+/* ------------------------------------ *\
+  COLORS
+\* ------------------------------------ */
+
+$uoc-corporate: #000078;
+$uoc-masterbrand: #73edff;
+$uoc-bg: color.scale($uoc-masterbrand, $lightness: 70%);
