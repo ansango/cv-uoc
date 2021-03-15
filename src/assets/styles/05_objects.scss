@@ -6,6 +6,95 @@
  * Wrappers.............Wrapping and constraining elements.
  */
 
+@import "01_settings";
+@import "02_tools.scss";
+
 /* ------------------------------------ *\
   #SAMPLE TITLE
 \* ------------------------------------ */
+
+.base {
+  font-family: $base-font;
+  @include text-setting("base");
+  background-color: #ffd700;
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+
+  @include tablet {
+    max-width: 768px;
+  }
+
+  @include desktop {
+    max-width: 992px;
+  }
+
+  @include large {
+    max-width: 1200px;
+  }
+}
+
+.content {
+  padding: 15px;
+}
+
+.row {
+  display: flex;
+  flex-direction: column;
+  @include desktop {
+    flex-direction: row;
+  }
+}
+
+.column {
+  padding: 20px;
+  width: 100%;
+
+  @include desktop {
+    &.one {
+      width: 33%;
+    }
+
+    &.two {
+      width: 50%;
+    }
+
+    &.two-third {
+      width: 66%;
+    }
+
+    &.full {
+      width: 100%;
+    }
+  }
+}
+
+.item {
+  padding: 10px;
+  margin: 10px 0;
+  max-width: 600px;
+  &.b-dash {
+    border: 2px;
+    border-style: dashed;
+  }
+}
+
+.sub-item {
+  padding: 10px 0;
+}
+
+.date {
+  font-style: italic;
+}
+
+.icon {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.title {
+  text-transform: capitalize;
+}

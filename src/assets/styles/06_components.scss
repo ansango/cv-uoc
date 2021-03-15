@@ -8,6 +8,17 @@
  * Buttons..............Button elements.
  */
 
-/* ------------------------------------ *\
-  #SAMPLE TITLE
-\* ------------------------------------ */
+.header{
+  display: flex;
+  justify-content: flex-end;
+}
+
+.footer {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.footer > * {
+  margin: 0 10px;
+}

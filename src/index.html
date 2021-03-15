@@ -12,39 +12,76 @@
         <!-- do not remove this line! -->
         <title>CV anibalsantos</title>
     </head>
-    <body>
+    <body class="base">
         <header>
-            <nav>
-                <ul>
-                    <li></li>
-                    <li>Aníbal Santos</li>
-                    <li>Frontend Developer</li>
-                    <li>anibalsantosgo@gmail.com</li>
-                </ul>
-            </nav>
+            <div class="container header">
+                <h1>@anibalsantos <span>frontend developer</span></h1>
+            </div>
         </header>
-        <section>
-            <article>
-                <header>
-                    <h2>About me</h2>
-                </header>
-                <p>
-                    Creative and self-starting Frontend Developer with 2 years
-                    experience websites and apps in fast-paced, collaborative
-                    environments. Passionate about usability and possess working
-                    knowledge of Javascript & CSS Frameworks.
-                </p>
-            </article>
-            <article>
-                <header>
-                    <h2>Experience</h2>
-                </header>
-                <ol>
-                    <li>
-                        <h3>Frontend Developer With Frameworks</h3>
-                        <div>
-                            <h4>Metropolis.Coop</h4>
-                            <p>september - 2020 - now</p>
+        <main>
+            <div class="container">
+                <section class="content">
+                    <h2 class="title">me</h2>
+                    <div class="row">
+                        <div class="column two">
+                            <div class="sub-content">
+                                <p>
+                                    <i class="far fa-meh-blank"></i>
+                                    anibal santos gomez
+                                </p>
+                                <p>
+                                    <i class="fas fa-globe-europe"></i>
+                                    salamanca, spain
+                                </p>
+                                <p>
+                                    <i class="fas fa-envelope"></i>
+                                    <a
+                                        href="mailto:anibalsantosgo@gmail.com"
+                                        target="_blank"
+                                        >anibalsantosgo@gmail.com</a
+                                    >
+                                </p>
+                                <p>
+                                    <i class="fab fa-linkedin"></i>
+                                    <a
+                                        href="https://linkedin.com/ansango"
+                                        target="_blank"
+                                        >ansango</a
+                                    >
+                                </p>
+                            </div>
+                        </div>
+                        <div class="column two">
+                            <div class="sub-content">
+                                <p>
+                                    Creative and self-starting Frontend
+                                    Developer with 2 years experience websites
+                                    and apps in fast-paced, collaborative
+                                    environments. Passionate about usability and
+                                    possess working knowledge of Javascript &
+                                    CSS Frameworks.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="content">
+                    <h2 class="title">projects</h2>
+                </section>
+                <section class="content row">
+                    <div class="column">
+                        <h2 class="title">experience</h2>
+                        <div class="item b-dash">
+                            <h3 class="title">
+                                Frontend Developer With Frameworks
+                            </h3>
+                            <a
+                                href="https://www.metropolis.coop/"
+                                target="_blank"
+                            >
+                                Metropolis.coop</a
+                            >
+                            <p class="date">september - 2020 - now</p>
                             <p>
                                 Solution development for commercial projects.
                                 Requirement analysis of digital products.
@@ -52,52 +89,138 @@
                                 development oriented to Frontend. Study and
                                 improvement of website performance.
                             </p>
-                            <div>
-                                <!--Logos-->
+                            <div class="sub-item">
+                                <img
+                                    class="icon"
+                                    src="/src/assets/images/icons/js.svg"
+                                    alt="js"
+                                />
+                                <img
+                                    class="icon"
+                                    src="/src/assets/images/icons/typescript.svg"
+                                    alt="ts"
+                                />
+                                <img
+                                    class="icon"
+                                    src="/src/assets/images/icons/sass.svg"
+                                    alt="sass"
+                                />
+                                <img
+                                    class="icon"
+                                    src="/src/assets/images/icons/tailwindcss.svg"
+                                    alt="talwind"
+                                />
+                                <img
+                                    class="icon"
+                                    src="/src/assets/images/icons/nuxt.svg"
+                                    alt="nuxt"
+                                />
+                                <img
+                                    class="icon"
+                                    src="/src/assets/images/icons/nodejs.svg"
+                                    alt="node"
+                                />
+                                <img
+                                    class="icon"
+                                    src="/src/assets/images/icons/mongo.svg"
+                                    alt="mongo"
+                                />
+                                <img
+                                    class="icon"
+                                    src="/src/assets/images/icons/git.svg"
+                                    alt="git"
+                                />
                             </div>
                         </div>
-                    </li>
-                    <li>
-                        <h3>Frontend Developer</h3>
-                        <h4>Everis</h4>
-                        <p>january - 2020 - now</p>
-                        <p>
-                            Frontend Developer in the Iberdrola Commercial Web
-                            project. Adaptation of responsive designs.
-                            JavaScript functionality. Adaptation for Google Tag
-                            Manager. Publication and version control. Web
-                            application maintenance. Customer support management
-                        </p>
-                        <div>
-                            <!--Logos-->
-                        </div>
-                    </li>
-                    <li>
-                        <h3>Frontend Junior Developer</h3>
-                        <h4>Yowi.Tv</h4>
-                        <p>march - 2018 - january - 2020</p>
-                        <p>
-                            Implementation and development of designs for the
-                            broadcast platform Yowi.tv. Generic layout
-                            structures, components, translation system.
-                        </p>
-                        <div>
-                            <!--Logos-->
-                        </div>
-                    </li>
-                </ol>
-            </article>
+                        <div class="item b-dash">
+                            <h3 class="title">Frontend Developer</h3>
 
-            <article>
-                <header>
-                    <h2>Education</h2>
-                </header>
-                <ol>
-                    <li>
-                        <h3>Master's Degree In Web Development</h3>
-                        <div>
-                            <h4>Universitat Oberta de Catalunya</h4>
-                            <p>2019 - now</p>
+                            <a
+                                href="https://www.everis.com/spain/es/home-spain"
+                                target="_blank"
+                            >
+                                Everis</a
+                            >
+                            <p class="date">january - 2020 - now</p>
+                            <p>
+                                Frontend Developer in the Iberdrola Commercial
+                                Web project. Adaptation of responsive designs.
+                                JavaScript functionality. Adaptation for Google
+                                Tag Manager. Publication and version control.
+                                Web application maintenance. Customer support
+                                management
+                            </p>
+                            <div class="sub-item">
+                                <img
+                                    class="icon"
+                                    src="/src/assets/images/icons/html5.svg"
+                                    alt="html"
+                                />
+                                <img
+                                    class="icon"
+                                    src="/src/assets/images/icons/css3.svg"
+                                    alt="css"
+                                />
+                                <img
+                                    class="icon"
+                                    src="/src/assets/images/icons/jquery.svg"
+                                    alt="jquery"
+                                />
+                                <img
+                                    class="icon"
+                                    src="/src/assets/images/icons/bootstrap.svg"
+                                    alt="bootstrap"
+                                />
+                                <img
+                                    class="icon"
+                                    src="/src/assets/images/icons/git.svg"
+                                    alt="git"
+                                />
+                            </div>
+                        </div>
+                        <div class="item b-dash">
+                            <h3 class="title">Frontend Junior Developer</h3>
+                            <a href="https://yowi.tv/" target="_blank">
+                                Yowi.tv</a
+                            >
+                            <p class="date">march - 2018 - january - 2020</p>
+                            <p>
+                                Implementation and development of designs for
+                                the broadcast platform Yowi.tv. Generic layout
+                                structures, components, translation system.
+                            </p>
+                            <div class="sub-item">
+                                <img
+                                    class="icon"
+                                    src="/src/assets/images/icons/vue.svg"
+                                    alt="vue"
+                                />
+                                <img
+                                    class="icon"
+                                    src="/src/assets/images/icons/bootstrap.svg"
+                                    alt="bootstrap"
+                                />
+                                <img
+                                    class="icon"
+                                    src="/src/assets/images/icons/git.svg"
+                                    alt="git"
+                                />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <h2 class="title">education</h2>
+                        <div class="item b-dash">
+                            <h3 class="title">
+                                Master's Degree In Web Development
+                            </h3>
+                            <a
+                                href="https://estudios.uoc.edu/es/masters-universitarios/desarrollo-sitios-aplicaciones-web/presentacion"
+                                target="_blank"
+                                >Universitat Oberta de Catalunya
+                            </a>
+                            <p class="date">2019 - now</p>
+
                             <p>
                                 Studies structured in three main areas:
                                 Fundamentals of web design and layouts (HTML and
@@ -106,200 +229,132 @@
                                 and back-end development) and Tools for design
                                 and development.
                             </p>
-                            <ps>N/A</ps>
-                            <div>
-                                <!--Logos-->
+                            <div class="sub-item">
+                                <img
+                                    class="icon"
+                                    src="/src/assets/images/icons/material.svg"
+                                    alt="material"
+                                />
+                                <img
+                                    class="icon"
+                                    src="/src/assets/images/icons/figma.svg"
+                                    alt="figma"
+                                />
+                                <img
+                                    class="icon"
+                                    src="/src/assets/images/icons/js.svg"
+                                    alt="js"
+                                />
+                                <img
+                                    class="icon"
+                                    src="/src/assets/images/icons/typescript.svg"
+                                    alt="ts"
+                                />
+                                <img
+                                    class="icon"
+                                    src="/src/assets/images/icons/parcel.svg"
+                                    alt="parcel"
+                                />
+                                <img
+                                    class="icon"
+                                    src="/src/assets/images/icons/tailwindcss.svg"
+                                    alt="tailwind"
+                                />
+                                <img
+                                    class="icon"
+                                    src="/src/assets/images/icons/angular.svg"
+                                    alt="angular"
+                                />
+                                <img
+                                    class="icon"
+                                    src="/src/assets/images/icons/laravel.svg"
+                                    alt="laravel"
+                                />
                             </div>
                         </div>
-                    </li>
-                    <li>
-                        <h3>HNC In Application Development</h3>
-                        <h4>Ilerna FP Online</h4>
-                        <p>2016 - 2018</p>
-                        <p>
-                            Development of cross-platform applications with
-                            access to databases using languages, libraries and
-                            tools appropriate to the specifications. Development
-                            of graphic user interfaces, with visual components.
-                        </p>
-                        <p>8.83/10</p>
-                        <div>
-                            <!--Logos-->
+                        <div class="item b-dash">
+                            <h3 class="title">
+                                HNC In Application Development
+                            </h3>
+                            <a
+                                href="https://www.ilerna.es/es/ciclo-grado-superior-desarrollo-aplicaciones-multiplataforma-39"
+                                target="_blank"
+                                >Ilerna FP Online
+                            </a>
+                            <p class="date">2016 - 2018</p>
+                            <p>
+                                Development of cross-platform applications with
+                                access to databases using languages, libraries
+                                and tools appropriate to the specifications.
+                                Development of graphic user interfaces, with
+                                visual components.
+                            </p>
+                            <div class="sub-item">
+                                <img
+                                    class="icon"
+                                    src="/src/assets/images/icons/csharp.svg"
+                                    alt="c#"
+                                />
+                                <img
+                                    class="icon"
+                                    src="/src/assets/images/icons/java.svg"
+                                    alt="java"
+                                />
+                                <img
+                                    class="icon"
+                                    src="/src/assets/images/icons/sql.svg"
+                                    alt="sql"
+                                />
+                                <img
+                                    class="icon"
+                                    src="/src/assets/images/icons/android.svg"
+                                    alt="android"
+                                />
+                            </div>
                         </div>
-                    </li>
-                    <li>
-                        <h3>Law Degree</h3>
-                        <h4>Salamanca University</h4>
-                        <p>2007 - 2012</p>
-                        <p>
-                            Training on the concepts of the Science of Law, and
-                            a theoretical and practical knowledge of the
-                            structure of the national, community and
-                            international legal order, and in particular of the
-                            normative contents of the different branches of law.
-                        </p>
-                        <p>7.2/10</p>
-                        <div>
-                            <!--Logos-->
+                        <div class="item b-dash">
+                            <h3 class="title">Law Degree</h3>
+                            <a
+                                href="https://www.usal.es/grado-en-derecho"
+                                target="_blank"
+                                >Salamanca University
+                            </a>
+                            <p class="date">2007 - 2012</p>
+                            <p>
+                                Training on the concepts of the Science of Law,
+                                and a theoretical and practical knowledge of the
+                                structure of the national, community and
+                                international legal order, and in particular of
+                                the normative contents of the different branches
+                                of law.
+                            </p>
+                            <div class="sub-item">
+                                <img
+                                    class="icon"
+                                    src="/src/assets/images/icons/law.svg"
+                                    alt="law"
+                                />
+                            </div>
                         </div>
-                    </li>
-                </ol>
-            </article>
-            <article>
-                <header>
-                    <h2>Skills</h2>
-                </header>
-                <ul>
-                    <li>
-                        <p>HTML5</p>
-                        <p>experience</p>
-                    </li>
-                    <li>
-                        <p>CSS3</p>
-                        <p>experience</p>
-                    </li>
-                    <li>
-                        <p>SASS</p>
-                        <p>experience</p>
-                    </li>
-                    <li>
-                        <p>JavaScript</p>
-                        <p>experience</p>
-                    </li>
-                    <li>
-                        <p>TypeScript</p>
-                        <p>experience</p>
-                    </li>
-                    <li>
-                        <p>Git</p>
-                        <p>experience</p>
-                    </li>
-                    <li>
-                        <p>Node</p>
-                        <p>experience</p>
-                    </li>
-                    <li>
-                        <p>Express</p>
-                        <p>experience</p>
-                    </li>
-                    <li>
-                        <p>Laravel</p>
-                        <p>experience</p>
-                    </li>
-                    <li>
-                        <p>SQL</p>
-                        <p>experience</p>
-                    </li>
-                    <li>
-                        <p>MongoDB</p>
-                        <p>experience</p>
-                    </li>
-                    <li>
-                        <p>npm</p>
-                        <p>experience</p>
-                    </li>
-                    <li>
-                        <p>Webpack</p>
-                        <p>experience</p>
-                    </li>
-                    <li>
-                        <p>Parcel</p>
-                        <p>experience</p>
-                    </li>
-                    <li>
-                        <img />
-                        <p>Prettier</p>
-                        <p>experience</p>
-                    </li>
-                    <li>
-                        <p>ESLint</p>
-                        <p>experience</p>
-                    </li>
-                    <li>
-                        <p>Vue.js</p>
-                        <p>experience</p>
-                    </li>
-                    <li>
-                        <p>Nuxt.js</p>
-                        <p>experience</p>
-                    </li>
-                    <li>
-                        <p>Angular</p>
-                        <p>experience</p>
-                    </li>
-                    <li>
-                        <p>Tailwind CSS</p>
-                        <p>experience</p>
-                    </li>
-                    <li>
-                        <p>Bootstrap</p>
-                        <p>experience</p>
-                    </li>
-                    <li>
-                        <p>Materialize</p>
-                        <p>experience</p>
-                    </li>
-                    <li>
-                        <p>Bulma</p>
-                        <p>experience</p>
-                    </li>
-                    <li>
-                        <p>Vuetify</p>
-                        <p>experience</p>
-                    </li>
-                    <li>
-                        <p>Jest</p>
-                        <p>experience</p>
-                    </li>
-                    <li>
-                        <p>Mocha</p>
-                        <p>experience</p>
-                    </li>
-                    <li>
-                        <p>Linux</p>
-                        <p>experience</p>
-                    </li>
-                    <li>
-                        <p>Ubuntu</p>
-                        <p>experience</p>
-                    </li>
-                    <li>
-                        <p>Figma</p>
-                        <p>experience</p>
-                    </li>
-                    <li>
-                        <p>Sketch</p>
-                        <p>experience</p>
-                    </li>
-                    <li>
-                        <p>Justinmind</p>
-                        <p>experience</p>
-                    </li>
-                    <li>
-                        <p>UX/UI Designs</p>
-                        <p>experience</p>
-                    </li>
-                    <li>
-                        <p>Adobe Photoshop</p>
-                        <p>experience</p>
-                    </li>
-                    <li>
-                        <p>Material Design</p>
-                        <p>experience</p>
-                    </li>
-                    <li>
-                        <p>Google Tag Manager</p>
-                        <p>experience</p>
-                    </li>
-                    <li>
-                        <p>Google Analytics</p>
-                        <p>experience</p>
-                    </li>
-                </ul>
-            </article>
-        </section>
+                    </div>
+                </section>
+                <section class="content">
+                    <h2 class="title">skills</h2>
+                </section>
+            </div>
+        </main>
         <footer>
-            <p>Copyright 2009 Your name</p>
+            <div class="container footer">
+                <div>
+                    <a class="no-hover" href="http://www.github.com/ansango" target="_blank">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a class="no-hover" href="http://instagram.com/iamasync" target="_blank">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </div>
+                <div><p>@anibalsantos 2021</p></div>
+            </div>
         </footer>
         <script src="./assets/scripts/main.js"></script>
         <!-- do not remove this line! -->
