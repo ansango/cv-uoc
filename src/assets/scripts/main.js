@@ -17,7 +17,21 @@ import "@fortawesome/fontawesome-free/css/all.css";
 /**
  * Libraries
  */
-+(function () {
-  const university = "UOC";
-  console.log(`Hello, ${university}!`);
-})();
+
+function onReady(callback) {
+  const intervalId = window.setInterval(function () {
+    if (document.getElementsByTagName("body")[0] !== undefined) {
+      window.clearInterval(intervalId);
+      callback.call(this);
+    }
+  }, 3000);
+}
+
+function setVisible(selector, visible) {
+  document.querySelector(selector).style.opacity = visible ? "1" : "0";
+}
+
+onReady(function () {
+  setVisible("#cv", true);
+  setVisible("#loading", false);
+});
