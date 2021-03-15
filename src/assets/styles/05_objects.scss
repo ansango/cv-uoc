@@ -7,7 +7,7 @@
  */
 
 @import "01_settings";
-@import "02_tools.scss";
+@import "02_tools";
 
 /* ------------------------------------ *\
   #SAMPLE TITLE
@@ -16,7 +16,7 @@
 .base {
   font-family: $base-font;
   @include text-setting("base");
-  background-color: #ffd700;
+  background-color: theme-color("primary", "base");
 }
 
 .container {
@@ -83,18 +83,28 @@
 }
 
 .sub-item {
-  padding: 10px 0;
+  padding-top: 10px;
 }
 
 .date {
   font-style: italic;
+  color: contrast("light", "secondary");
 }
 
 .icon {
   width: 1.5rem;
   height: 1.5rem;
+  transition: transform 0.2s;
+
+  &:hover {
+    transform: scale(1.5);
+  }
 }
 
 .title {
   text-transform: capitalize;
+}
+
+.underline {
+  @include underline;
 }

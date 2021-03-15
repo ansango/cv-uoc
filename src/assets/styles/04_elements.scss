@@ -15,10 +15,13 @@
 h1,
 h2 {
   @include text-setting("xl");
+  text-shadow: 3px 3px 0 theme-color("primary", "dark");
+  font-weight: bold;
 }
 
 h3 {
   @include text-setting("lg");
+  font-weight: bold;
 }
 
 h4,
@@ -44,8 +47,9 @@ main {
 
 a {
   @include hover-link;
+  @include underline;
 }
 
-p{
+p {
   margin: 10px 0;
 }

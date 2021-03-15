@@ -8,17 +8,29 @@
  * Buttons..............Button elements.
  */
 
-.header{
+@import "01_settings";
+@import "02_tools";
+
+.header {
   display: flex;
   justify-content: flex-end;
+
+  & h1 {
+    @include underline;
+  }
+
+  & span {
+    font-weight: normal;
+    font-style: italic;
+  }
 }
 
 .footer {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-}
 
-.footer > * {
-  margin: 0 10px;
+  & > * {
+    margin: 0 10px;
+  }
 }

@@ -84,18 +84,37 @@
 @mixin hover-link {
   text-decoration: none;
   color: #000000;
-  &:hover,
-  &:focus {
-    text-decoration: underline;
-  }
+
   &:visited {
     color: #000000;
   }
+}
 
-  &.no-hover {
-    &:hover,
-    &:focus {
-      text-decoration: none;
+/* ------------------------------------ *\
+  ANIMATION UNDERLINE
+\* ------------------------------------ */
+
+@mixin underline {
+  position: relative;
+  &:before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: theme-color("tools", "black");
+    visibility: hidden;
+    transition: all 0.3s ease-in-out;
+  }
+  &:hover:before {
+    visibility: visible;
+    width: 100%;
+  }
+
+  &.no-underline {
+    &:before {
+      height: 0;
     }
   }
 }
