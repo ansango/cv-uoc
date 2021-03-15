@@ -12,9 +12,7 @@
 @import "02_tools";
 
 #cv {
-  position: relative;
-  opacity: 0;
-  z-index: 2;
+  display: none;
 }
 
 #loading {
@@ -29,8 +27,6 @@
   width: 100%;
   height: 100%;
   background-color: theme-color("tools", "black");
-  opacity: 1;
-  transition: all 0.8s ease-in-out;
 }
 
 #loading .container-img {

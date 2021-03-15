@@ -28,7 +28,7 @@ function onReady(callback) {
 }
 
 function setVisible(selector, visible) {
-  document.querySelector(selector).style.opacity = visible ? "1" : "0";
+  document.querySelector(selector).style.display = visible ? "block" : "none";
 }
 
 onReady(function () {
