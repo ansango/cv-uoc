@@ -82,3 +82,34 @@
     margin: 0 10px;
   }
 }
+
+.github-container {
+  @include align-center;
+
+  @include desktop {
+    @include align-start;
+  }
+}
+
+.button {
+  position: relative;
+  width: 230px;
+  padding: 10px 0;
+  border-radius: 10px;
+  background-color: theme-color("tools", "full-black");
+  color: theme-color("primary", "dark");
+  box-shadow: 3px 3px theme-color("primary", "dark");
+  text-align: center;
+  font-weight: bold;
+  cursor: pointer;
+
+  & span {
+    margin: 0 10px;
+  }
+
+  &:hover {
+    box-shadow: none;
+    top: 3px;
+    left: 3px;
+  }
+}

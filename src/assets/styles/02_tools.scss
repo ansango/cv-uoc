@@ -118,3 +118,22 @@
     }
   }
 }
+
+/* ------------------------------------ *\
+  CENTER
+\* ------------------------------------ */
+
+@mixin align-center {
+  display: flex;
+  justify-content: center;
+}
+
+@mixin align-start {
+  display: flex;
+  justify-content: flex-start;
+}
+
+@mixin align-end {
+  display: flex;
+  justify-content: flex-start;
+}
