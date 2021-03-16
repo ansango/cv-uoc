@@ -44,7 +44,13 @@
 .row {
   display: flex;
   flex-direction: column;
+
+  &.no-column {
+    flex-flow: wrap;
+    flex-direction: row;
+  }
   @include desktop {
+    flex-flow: wrap;
     flex-direction: row;
   }
 }
@@ -75,10 +81,15 @@
 .item {
   padding: 10px;
   margin: 10px 0;
-  max-width: 600px;
   &.b-dash {
     border: 2px;
     border-style: dashed;
+  }
+
+  &.b-inset {
+    border: 2px;
+    border-style: inset;
+    border-color: theme-color("primary", "dark");
   }
 }
 

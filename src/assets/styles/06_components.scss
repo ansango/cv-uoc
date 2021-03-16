@@ -85,7 +85,6 @@
 
 .github-container {
   @include align-center;
-
   @include desktop {
     @include align-start;
   }
@@ -106,6 +105,23 @@
   & span {
     margin: 0 10px;
   }
+
+  &:hover {
+    box-shadow: none;
+    top: 3px;
+    left: 3px;
+  }
+}
+
+.chip {
+  position: relative;
+  padding: 10px 20px;
+  margin: 5px;
+  border-radius: 20px;
+  background-color: theme-color("primary", "mid");
+  box-shadow: 3px 3px contrast("light", "hint");
+  text-align: center;
+  font-weight: bold;
 
   &:hover {
     box-shadow: none;
