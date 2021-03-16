@@ -6,11 +6,17 @@
  * Wrappers.............Wrapping and constraining elements.
  */
 
+/**
+* @imports
+*/
 @import "01_settings";
 @import "02_tools";
+/**
+* @imports
+*/
 
 /* ------------------------------------ *\
-  #SAMPLE TITLE
+  #BASE
 \* ------------------------------------ */
 
 .base {
@@ -18,6 +24,10 @@
   @include text-setting("base");
   background-color: theme-color("primary", "base");
 }
+
+/* ------------------------------------ *\
+  #CONTAINERS
+\* ------------------------------------ */
 
 .container {
   width: 100%;
@@ -35,10 +45,6 @@
   @include large {
     max-width: 1200px;
   }
-}
-
-.content {
-  padding: 15px;
 }
 
 .row {
@@ -97,6 +103,14 @@
   padding-top: 10px;
 }
 
+/* ------------------------------------ *\
+  #CONTENT
+\* ------------------------------------ */
+
+.content {
+  padding: 15px;
+}
+
 .date {
   font-style: italic;
   color: contrast("light", "secondary");
@@ -115,6 +129,10 @@
 .title {
   text-transform: capitalize;
 }
+
+/* ------------------------------------ *\
+  #OTHER
+\* ------------------------------------ */
 
 .underline {
   @include underline;
