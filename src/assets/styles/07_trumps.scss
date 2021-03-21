@@ -22,7 +22,6 @@
   #BORDER TYPE
 \* ------------------------------------ */
 
-
 .b-dash {
   border: 2px;
   border-style: dashed;
@@ -32,4 +31,8 @@
   border: 2px;
   border-style: inset;
   border-color: theme-color("primary", "dark");
+}
+
+ul.list-styled > li {
+  list-style-type: circle;
 }
