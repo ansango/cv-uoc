@@ -78,6 +78,25 @@
 }
 
 /* ------------------------------------ *\
+  #CENTER CONTAINERS FLEX
+\* ------------------------------------ */
+
+@mixin align-center {
+  display: flex;
+  justify-content: center;
+}
+
+@mixin align-start {
+  display: flex;
+  justify-content: flex-start;
+}
+
+@mixin align-end {
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* ------------------------------------ *\
   #LINKS
 \* ------------------------------------ */
 
@@ -117,23 +136,4 @@
       height: 0;
     }
   }
-}
-
-/* ------------------------------------ *\
-  #CENTER
-\* ------------------------------------ */
-
-@mixin align-center {
-  display: flex;
-  justify-content: center;
-}
-
-@mixin align-start {
-  display: flex;
-  justify-content: flex-start;
-}
-
-@mixin align-end {
-  display: flex;
-  justify-content: flex-end;
 }

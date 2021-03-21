@@ -17,3 +17,19 @@
 .bold {
   font-weight: bold;
 }
+
+/* ------------------------------------ *\
+  #BORDER TYPE
+\* ------------------------------------ */
+
+
+.b-dash {
+  border: 2px;
+  border-style: dashed;
+}
+
+.b-inset {
+  border: 2px;
+  border-style: inset;
+  border-color: theme-color("primary", "dark");
+}

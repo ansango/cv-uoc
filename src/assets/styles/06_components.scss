@@ -26,18 +26,6 @@
 }
 
 /* ------------------------------------ *\
-  #IMG-CONTAINERS
-\* ------------------------------------ */
-
-.container-img {
-  @include align-center;
-  @include desktop {
-    @include align-start;
-  }
-  margin-bottom: 30px;
-}
-
-/* ------------------------------------ *\
   #LOADER
 \* ------------------------------------ */
 
@@ -90,8 +78,7 @@
 \* ------------------------------------ */
 
 .header {
-  display: flex;
-  justify-content: flex-end;
+  @include align-end;
 
   & h1 {
     @include underline;
@@ -108,8 +95,7 @@
 \* ------------------------------------ */
 
 .footer {
-  display: flex;
-  justify-content: flex-end;
+  @include align-end;
   align-items: center;
 
   & > * {
@@ -118,14 +104,47 @@
 }
 
 /* ------------------------------------ *\
+  #DATES
+\* ------------------------------------ */
+
+.date {
+  font-style: italic;
+  color: contrast("light", "secondary");
+}
+
+/* ------------------------------------ *\
   #GITHUB
 \* ------------------------------------ */
 
-.github-container {
+.github {
   @include align-center;
   @include desktop {
     @include align-start;
   }
+}
+
+/* ------------------------------------ *\
+  #ICON
+\* ------------------------------------ */
+
+.icon {
+  width: 1.5rem;
+  height: 1.5rem;
+  transition: transform 0.2s;
+
+  &:hover {
+    transform: scale(1.5);
+  }
+}
+
+/* ------------------------------------ *\
+  #AVATAR
+\* ------------------------------------ */
+
+.avatar {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
 }
 
 /* ------------------------------------ *\
@@ -176,12 +195,3 @@
   }
 }
 
-/* ------------------------------------ *\
-  #AVATAR
-\* ------------------------------------ */
-
-.avatar {
-  border-radius: 50%;
-  width: 150px;
-  height: 150px;
-}
